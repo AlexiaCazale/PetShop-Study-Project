@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PetShop</title>
+</head>
+
+<body>
+
+    <section id="contato">
+
+        <h1>PetShop</h1>
+
+        <label>Nome: <input type="text" name="nome" id="nome"><div class="erro"></div></label>
+        <br>
+        <label>Nome Pet: <input type="text" name="pet" id="pet"><div class="erro"></div></label>
+        <br>
+        <div id="enviado"></div>
+        <div id="gasto_final" class="alerta_erro"></div>
+
+    </section>
+
+    <br>
+    
+    <section id="servicos">
+        <h1>Serviços</h1>
+
+        <h3>Banho - R$ 70,00</h3>
+        <div class="center"><img src="img/banho.jpg" alt="cachorro_banho"></div>
+        <br>
+        <label class="center"><input type="checkbox" name="banho" id="banho" value="70"><div class="servico_realizado"></div></label>
+
+
+        <h3>Tosa - R$ 80,00</h3>
+        <div class="center"><img src="img/tosa.jpg" alt="cachorro_tosa"></div>
+        <br>
+        <label class="center"><input type="checkbox" name="tosa" id="tosa" value="80"><div class="servico_realizado"></div></label>
+
+        <h3>Passeio - R$ 40,00</h3>
+        <div class="center"><img src="img/passeio.jpg" alt="cachorro_passeio"></div>
+        <br>
+        <label class="center"><input type="checkbox" name="passeio" id="passeio" value="40"><div class="servico_realizado"></div></label>
+
+        <br>
+
+        <!---<div id="gasto_final"></div>
+        <br>--->
+        <div class="center"><button type="submit" onclick="calcular()">Enviar</button></div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
